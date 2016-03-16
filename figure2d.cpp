@@ -11,9 +11,3 @@ string Figure2D::toString()const{
 	ss << "Figure2D @ " << this;
 	return ss.str();
 }
-double Figure2D::area()const{
-	return -1;
-}
-double Figure2D::perimeter()const{
-	return -1;
-}

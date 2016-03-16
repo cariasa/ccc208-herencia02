@@ -11,4 +11,5 @@ class Rectangle:public Figure2D{
 	virtual string toString()const;
 	double area()const;
 	double perimeter()const;
+	bool tall()const;
 };

@@ -20,3 +20,6 @@ double Rectangle::area()const{
 double Rectangle::perimeter()const{
 	return 2 * base + 2 * height;
 }
+bool Rectangle::tall()const{
+	return base < height;
+}

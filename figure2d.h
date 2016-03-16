@@ -8,6 +8,6 @@ class Figure2D{
 	Figure2D();
 	virtual ~Figure2D();
 	virtual string toString()const;
-	virtual double area()const;
-	virtual double perimeter()const;
+	virtual double area()const=0;
+	virtual double perimeter()const=0;
 };
