@@ -33,6 +33,23 @@ int main(int argc, char* argv[]){
 	otrafuncion(rec);
 	otrafuncion(sq);
 	otrafuncion(tri);
+	cout << "-------- Memoria dinamica para ver destructores----" << endl;
+
+	Figure2D* arr[4];
+	arr[0] = new Rectangle(5, 12);
+	arr[1] = new Ellipse(5, 12);
+	arr[2] = new Square(11);
+	arr[3] = new Triangle(2,2,2);
+
+	for (int i=0; i<4; i++)
+		cout << arr[i]->toString() << endl;
+
+
+	for (int i=0; i<4; i++){
+		cout << "liberando elemento " << i << endl;
+		delete arr[i];
+	}
+
 
 	return 0;
 }

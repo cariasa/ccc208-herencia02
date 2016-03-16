@@ -2,12 +2,16 @@
 #include "rectangle.h"
 #include <string>
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::string;
 using std::stringstream;
 
 Rectangle::Rectangle(double base, double height):base(base), height(height){
 }
 Rectangle::~Rectangle(){
+	cout << "Destructor de Rectangle" << endl;
 }
 string Rectangle::toString()const{
 	stringstream ss;

@@ -3,11 +3,16 @@
 #include <string>
 #include <sstream>
 #include <cmath>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::string;
 using std::stringstream;
 
 Ellipse::Ellipse(double r1, double r2):r1(r1), r2(r2){}
-Ellipse::~Ellipse(){}
+Ellipse::~Ellipse(){
+	cout << "Destructor de Ellipse" << endl;
+}
 string Ellipse::toString()const{
 	stringstream ss;
 	ss << "Ellipse";

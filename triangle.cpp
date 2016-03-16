@@ -3,12 +3,16 @@
 #include <string>
 #include <sstream>
 #include <cmath>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::string;
 using std::stringstream;
 
 Triangle::Triangle(double a, double b, double c):a(a), b(b), c(c){
 }
 Triangle::~Triangle(){
+	cout << "Destructor de Triangle" << endl;
 }
 string Triangle::toString()const{
 	stringstream ss;
