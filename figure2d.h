@@ -7,7 +7,7 @@ class Figure2D{
   public:
 	Figure2D();
 	virtual ~Figure2D();
-	string toString()const;
-	double area()const;
-	double perimeter()const;
+	virtual string toString()const;
+	virtual double area()const;
+	virtual double perimeter()const;
 };

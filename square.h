@@ -8,5 +8,5 @@ class Square : public Rectangle{
   public:
 	Square(double);
 	virtual ~Square();
-	string toString()const;
+	virtual string toString()const;
 };

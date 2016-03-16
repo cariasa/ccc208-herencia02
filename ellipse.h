@@ -9,7 +9,7 @@ class Ellipse : public Figure2D{
   public:
 	Ellipse(double, double);
 	virtual ~Ellipse();
-	string toString()const;
+	virtual string toString()const;
 	double area()const;
 	double perimeter()const;
 };

@@ -8,7 +8,7 @@ class Rectangle:public Figure2D{
   public:
 	Rectangle(double, double);
 	virtual ~Rectangle();
-	string toString()const;
+	virtual string toString()const;
 	double area()const;
 	double perimeter()const;
 };

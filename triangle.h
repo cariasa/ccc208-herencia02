@@ -9,7 +9,7 @@ class Triangle : public Figure2D{
   public:
 	Triangle(double, double, double);
 	virtual ~Triangle();
-	string toString()const;
+	virtual string toString()const;
 	double area()const;
 	double perimeter()const;
 };
